@@ -57,8 +57,8 @@
     * <img width="1744" height="733" alt="image" src="https://github.com/user-attachments/assets/10bff86b-7513-4f84-a9fd-52dbfd14bb6d" />
     * <img width="2108" height="705" alt="image" src="https://github.com/user-attachments/assets/0a9caba2-bc29-47e3-9b0a-ca9971f49f62" />
     
-    *使用手册帮助用户更快上手
-    <img width="2559" height="1417" alt="image" src="https://github.com/user-attachments/assets/2c9aebc2-9c5a-4e72-8419-061d3ae3647b" />
+    * 使用手册帮助用户更快上手
+    * <img width="2559" height="1417" alt="image" src="https://github.com/user-attachments/assets/2c9aebc2-9c5a-4e72-8419-061d3ae3647b" />
 
 3.  **账务处理 (G/L)**
     * **凭证录入**：支持自动平衡校验。
