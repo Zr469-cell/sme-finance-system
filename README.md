@@ -1,6 +1,6 @@
 # SME Finance System (基于复式记账的中小企业财务系统)
 
-> 一个融合了**资深财务智慧**与**全栈工程架构**的企业级财务管理系统。
+> 一个便于初学者使用的的个人和中小企业级财务管理系统。
 > A professional Double-Entry Bookkeeping System for SMEs.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -24,7 +24,7 @@
 ### 后端 (Backend)
 * **核心框架**：Java 17+, Spring Boot 3.x
 * **数据库**：MySQL 8.0 
-* **ORM框架**：MyBatis Plus / Spring Data JPA (根据实际选择)
+* **ORM框架**：MyBatis Plus / Spring Data JPA 
 * **安全鉴权**：Spring Security + JWT
 * **工具库**：Lombok, Hutool, EasyExcel
 
