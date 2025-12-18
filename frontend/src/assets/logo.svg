@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- 背景：深邃的午夜蓝渐变，体现专业与严谨 -->
+    <linearGradient id="bg_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 点缀：奢华金渐变，体现财富与价值 -->
+    <linearGradient id="gold_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1c40f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- 滤镜：发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 主体容器：圆角矩形 (App Icon 风格) -->
+  <rect x="10" y="10" width="180" height="180" rx="45" fill="url(#bg_gradient)" />
+
+  <!-- 装饰：微弱的数据网格背景 -->
+  <path d="M10 60 H190 M10 100 H190 M10 140 H190 M60 10 V190 M100 10 V190 M140 10 V190" 
+        stroke="white" stroke-width="1" opacity="0.05" />
+
+  <!-- 核心图形：上升趋势线 -->
+  <!-- 使用贝塞尔曲线绘制平滑的增长轨迹 -->
+  <path d="M40 140 C 70 140, 90 100, 110 100 S 140 60, 160 50" 
+        fill="none" stroke="white" stroke-width="6" stroke-linecap="round" 
+        filter="url(#glow)" />
+        
+  <!-- 区域填充：趋势线下方的金色微光 -->
+  <path d="M40 140 C 70 140, 90 100, 110 100 S 140 60, 160 50 L 160 160 L 40 160 Z" 
+        fill="url(#gold_gradient)" opacity="0.2" />
+
+  <!-- 亮点：顶部的金色圆点，象征目标达成 -->
+  <circle cx="160" cy="50" r="10" fill="url(#gold_gradient)" filter="url(#glow)" />
+</svg>

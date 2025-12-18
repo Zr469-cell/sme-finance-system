@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #303133;
+}
+
+#app {
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 常用工具类 */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+/* 财务专用：负数红字 */
+.text-negative { color: #F56C6C; }
+/* 财务专用：等宽字体显示金额 */
+.money-font { font-family: 'Consolas', 'Monaco', monospace; }
+
+/* 去除链接下划线 */
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,37 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: finance-erp
+  
+  # === 数据库连接配置 (请务必修改密码) ===
+  datasource:
+    # 数据库地址：确保本地 MySQL 中已经有名为 finance_sys 的数据库
+    # useSSL=false: 开发环境关闭 SSL 警告
+    # serverTimezone=Asia/Shanghai: 解决时区差8小时问题
+    # allowPublicKeyRetrieval=true: 解决 MySQL 8.0+ 连接认证问题
+    url: jdbc:mysql://localhost:3306/finance_sys?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    
+    username: root
+    password: 1q0pazlm  # <--- 【重要】请修改为您的 MySQL 真实密码 (例如 123456)
+    
+    'driver-class-name': com.mysql.cj.jdbc.Driver
+
+  # === JPA (Hibernate) 配置 ===
+  jpa:
+    'database-platform': org.hibernate.dialect.MySQLDialect
+    hibernate:
+      # ddl-auto 策略:
+      # update: 启动时自动根据 Entity 更新表结构 (适合开发)
+      # validate: 仅校验表结构是否一致 (适合生产)
+      # none: 不做任何操作
+      'ddl-auto': update
+    
+    # 在控制台打印 SQL 语句，方便调试
+    'show-sql': true
+    
+    properties:
+      hibernate:
+        # 格式化打印的 SQL，使其更易读
+        format_sql: true
